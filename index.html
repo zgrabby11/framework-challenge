@@ -8,143 +8,155 @@
     <link rel="stylesheet" href="./mvp.css">
 
     <meta charset="utf-8">
-    <meta name="description" content="My description">
+    <meta name="description" content="In-Car App for Kenyan Drivers">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My title</title>
+    <title>SafariDrive Kenya</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="/"><img alt="Logo" src="https://via.placeholder.com/200x70?text=Logo" height="70"></a>
+            <a href="/"><img alt="SafariDrive Logo" src="https://via.placeholder.com/200x70?text=SafariDrive" height="70"></a>
             <ul>
-                <li>Menu Item 1</li>
-                <li><a href="#section-1">Menu Item 2</a></li>
-                <li><a href="#">Dropdown Menu Item</a>
+                <li><a href="#nav">Navigation</a></li>
+                <li><a href="#fuel">Fuel Finder</a></li>
+                <li><a href="#">More</a>
                     <ul>
-                        <li><a href="#">Sublink with a long name</a></li>
-                        <li><a href="#">Short sublink</a></li>
+                        <li><a href="#music">Music</a></li>
+                        <li><a href="#history">Ride History</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
-        <h1>Page Heading with <i>Italics</i> and <u>Underline</u></h1>
-        <p>Page Subheading with <mark>highlighting</mark></p>
+        <h1>SafariDrive <i>Nairobi Edition</i> <u>Beta</u></h1>
+        <p>Smart navigation. Local updates. Designed for Kenya.</p>
         <br>
-        <p><a href="#"><i>Italic Link Button</i></a><a href="#"><b>Bold Link Button &rarr;</b></a></p>
+        <p>
+            <a href="#"><i>Voice Assistant</i></a>
+            <a href="#"><b>Quick Start &rarr;</b></a>
+        </p>
     </header>
+
     <main>
         <hr>
-        <section id="section-1">
+        <section id="nav">
             <header>
-                <h2>Section Heading</h2>
-                <p>Section Subheading</p>
+                <h2>Live Navigation</h2>
+                <p>Tap to start voice-guided routing in Nairobi</p>
             </header>
             <aside>
-                <h3>Card heading</h3>
-                <p>Card content*</p>
-                <p><small>*with small content</small></p>
+                <h3>Traffic Alerts</h3>
+                <p>Heavy traffic on Uhuru Highway <sup>New</sup></p>
             </aside>
             <aside>
-                <h3>Card heading</h3>
-                <p>Card content <sup>with notification</sup></p>
+                <h3>Popular Destinations</h3>
+                <p>JKIA Airport, Sarit Centre, Gikambura Shell</p>
             </aside>
             <aside>
-                <h3>Card heading</h3>
-                <p>Card content</p>
+                <h3>Save Routes</h3>
+                <p>Bookmark your daily commute</p>
             </aside>
         </section>
+
         <hr>
-        <section>
+        <section id="fuel">
             <blockquote>
-                "Quote"
-                <footer><i>- Attribution</i></footer>
+                "Nearest petrol station: Total Thika Rd (2.1 km)"
+                <footer><i>- Based on your location</i></footer>
             </blockquote>
         </section>
+
         <hr>
-        <section>
+        <section id="music">
             <table>
                 <thead>
                     <tr>
                         <th></th>
-                        <th>Col A</th>
-                        <th>Col B</th>
-                        <th>Col C</th>
+                        <th>Playlist</th>
+                        <th>Genre</th>
+                        <th>Language</th>
                     </tr>
                 </thead>
                 <tr>
-                    <td>Row 1</td>
-                    <td>Cell A1</td>
-                    <td>Cell B1</td>
-                    <td>Cell C1</td>
+                    <td>1</td>
+                    <td>Matatu Vibes</td>
+                    <td>Gengetone</td>
+                    <td>Swahili</td>
                 </tr>
                 <tr>
-                    <td>Row 2</td>
-                    <td>Cell A2</td>
-                    <td>Cell B2</td>
-                    <td>Cell C2</td>
+                    <td>2</td>
+                    <td>Highway Chill</td>
+                    <td>Afro-fusion</td>
+                    <td>English</td>
                 </tr>
             </table>
         </section>
+
         <hr>
-        <article>
-            <h2>Left-aligned header</h2>
-            <p>Left-aligned paragraph</p>
+        <article id="history">
+            <h2>Trip Summary</h2>
+            <p>Your recent rides</p>
             <aside>
-                <p>Article callout</p>
+                <p>Last trip: Nairobi CBD to Westlands - 6.3 km</p>
             </aside>
             <ul>
-                <li>List item 1</li>
-                <li>List item 2</li>
+                <li>Time: 18 min</li>
+                <li>Fare Paid (M-PESA): KSh 350</li>
             </ul>
             <figure>
-                <img alt="Stock photo" src="https://via.placeholder.com/1080x500?text=Amazing+stock+photo">
-                <figcaption><i>Image caption</i></figcaption>
+                <img alt="Route map" src="https://via.placeholder.com/1080x500?text=Route+Map+Snapshot">
+                <figcaption><i>Trip overview image</i></figcaption>
             </figure>
         </article>
+
         <hr>
         <div>
             <details>
-                <summary>Expandable title</summary>
-                <p>Revealed content</p>
+                <summary>Common Swahili Phrases</summary>
+                <p>"Twende" = Let's go</p>
+                <p>"Simama hapa" = Stop here</p>
             </details>
             <details>
-                <summary>Another expandable title</summary>
-                <p>More revealed content</p>
+                <summary>Safety Tips</summary>
+                <p>Always check mirrors before overtaking. Use headlights in fog.</p>
             </details>
             <br>
-            <p>Inline <code>code</code> snippets</p>
+            <p>Inline <code>API.location()</code> snippet</p>
             <pre>
                 <code>
-// preformatted code block
+// Sample JSON:
+// { "location": "Nairobi CBD", "fuelStationsNearby": 3 }
                 </code>
             </pre>
         </div>
+
         <hr>
         <section>
             <form>
                 <header>
-                    <h2>Form title</h2>
+                    <h2>Feedback & Support</h2>
                 </header>
-                <label for="input1">Input label:</label>
-                <input type="text" id="input1" name="input1" size="20" placeholder="Input1">
-                <label for="select1">Select label:</label>
+                <label for="input1">Name:</label>
+                <input type="text" id="input1" name="input1" size="20" placeholder="e.g. Juma">
+                <label for="select1">App Rating:</label>
                 <select id="select1">
-                    <option value="option1">option1</option>
-                    <option value="option2">option2</option>
+                    <option value="5">★★★★★</option>
+                    <option value="4">★★★★☆</option>
+                    <option value="3">★★★☆☆</option>
+                    <option value="2">★★☆☆☆</option>
+                    <option value="1">★☆☆☆☆</option>
                 </select>
-                <label for="textarea1">Textarea label:</label>
-                <textarea cols="40" rows="5" id="textarea1"></textarea>
+                <label for="textarea1">Your Feedback:</label>
+                <textarea cols="40" rows="5" id="textarea1" placeholder="What did you like or dislike?"></textarea>
                 <button type="submit">Submit</button>
             </form>
         </section>
     </main>
+
     <footer>
         <hr>
-        <p>
-            <small>Contact info</small>
-        </p>
+        <p><small>SafariDrive Kenya &copy; 2025 — Contact us: support@safaridrive.ke</small></p>
     </footer>
 </body>
 
